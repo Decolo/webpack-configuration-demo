@@ -32,7 +32,13 @@ module.exports = {
                     'autoprefixer-loader'
                 ]
             },
-            { test: /\.(png|jpg)$/, loader: 'url-loader?limit=8192' },
+            {
+                test: /\.(png|jpg)$/,
+                loaders: [
+                    'file-loader?hash=sha512&digest=hex&name=[hash]',
+                    'image-webpack-loader'
+                ]
+            },
             {
                 test: /\.jsx?$/,
                 exclude: /node_modules/,
