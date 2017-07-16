@@ -7,7 +7,8 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "build": "webpack",
         "watch": "webpack --watch",
-        "start": "webpack-dev-server"
+        "start": "webpack-dev-server",
+        "compress": "webpack -p"
     },
     "explanationScript": "npm scripts默认去找node_modules文件下的.bin目录，然后去找webpack。执行webpack这个可执行文件，然后会默认在package.json所在,的当前目录下寻找webpack.config.js文件去执行。",
     "keywords": [],
