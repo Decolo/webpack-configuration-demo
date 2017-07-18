@@ -21,5 +21,5 @@ function component() {
 // debugger
 document.body.appendChild(component())
 var button = document.createElement('button')
-button.innerText = 'submit'
+button.innerText = 'confirm'
 document.body.appendChild(button)
